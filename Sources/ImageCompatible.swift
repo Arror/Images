@@ -51,3 +51,32 @@ extension Image where Base: UIImageView {
         }
     }
 }
+
+extension CALayer: ImageCompatible {}
+
+extension Image where Base: CALayer {
+    
+    public func setImage(iterator: AnyIterator<URL>?, placeholder: UIImage? = nil, options: YYWebImageOptions = [.setImageWithFadeAnimation]) {
+        
+        if let iterator = iterator {
+            
+            let completion: YYWebImageCompletionBlock = { image, url, type, stage, error in
+                
+                if let img = image {
+                    
+                    DispatchQueue.main.async { self.base.contents = img.cgImage }
+                    
+                } else {
+                    
+                    self.setImage(iterator: iterator, placeholder: placeholder, options: options)
+                }
+            }
+            
+            self.base.yy_setImage(with: iterator.next(), placeholder: placeholder, options: options, completion: completion)
+            
+        } else {
+            
+            self.base.contents = placeholder?.cgImage
+        }
+    }
+}
