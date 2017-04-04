@@ -1,0 +1,6 @@
+framework module Images {
+  umbrella header "Images-umbrella.h"
+
+  export *
+  module * { export * }
+}

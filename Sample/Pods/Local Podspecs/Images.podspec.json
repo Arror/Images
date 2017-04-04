@@ -1,0 +1,23 @@
+{
+  "name": "Images",
+  "version": "0.1.0",
+  "license": "MIT",
+  "summary": "Images.",
+  "homepage": "https://github.com/Arror/Images",
+  "authors": {
+    "Arror": "hallo.maqiang@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Arror/Images.git",
+    "tag": "0.1.0"
+  },
+  "source_files": "Sources/*.swift",
+  "platforms": {
+    "ios": "8.0"
+  },
+  "dependencies": {
+    "YYWebImage": [
+
+    ]
+  }
+}
