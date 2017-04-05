@@ -21,13 +21,9 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        let i1 = AnyIterator<URL>([URL(string: "http://github.com/logo.png")!].makeIterator())
+        let i = AnyIterator<URL>([URL(string: "https://i.ezbuy.sg/Frc0C3N6KjH9bWD7aOGJFWqJuJVn")!].makeIterator())
         
-        self.imageView.img.setImage(iterator: i1)
-        
-        let i2 = AnyIterator<URL>([URL(string: "http://github.com/logo.png")!].makeIterator())
-        
-        self.contentView.layer.img.setImage(iterator: i2)
+        self.imageView.img.setImage(iterator: i)
     }
 }
 
