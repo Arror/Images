@@ -27,7 +27,9 @@ extension UIImageView: ImageCompatible {}
 
 extension Image where Base: UIImageView {
     
-    public func setImage(iterator: AnyIterator<URL>?, placeholder: UIImage? = nil, options: YYWebImageOptions = [.setImageWithFadeAnimation]) {
+    public func setImage(iterator: AnyIterator<URL>?, placeholder: UIImage? = nil) {
+        
+        let options: YYWebImageOptions = [.setImageWithFadeAnimation]
         
         if let iterator = iterator {
             
@@ -39,7 +41,7 @@ extension Image where Base: UIImageView {
                     
                 } else {
                     
-                    self.setImage(iterator: iterator, placeholder: placeholder, options: options)
+                    self.setImage(iterator: iterator, placeholder: placeholder)
                 }
             }
             

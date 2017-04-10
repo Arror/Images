@@ -82,7 +82,6 @@
 		ED2C894C7A3EBD8C629A36A9622A2978 /* YYImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 393C242214CC91406C4FD0F012D79A70 /* YYImage.framework */; };
 		F13D8AF3020DE7CBF2E2A3DF42F324D5 /* YYAnimatedImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 247014568ED7C25AC0C1D005380F2438 /* YYAnimatedImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F196231B669CC0FDCF6D3F0D6B5BC724 /* YYImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 672D55D6B49811AFEA5C119723B13915 /* YYImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F84D575B0B139211C0E6FD3FE55911B6 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911CCCAF6BD05F081B830A5AD69AE5D7 /* Images.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -212,7 +211,6 @@
 		8F9631C59A5F1724C9D1C77A77D4518E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		900934331FC96A1D40EEE7430BD77959 /* YYImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYImageCache.m; path = YYWebImage/YYImageCache.m; sourceTree = "<group>"; };
 		902437855630F5C583C8955FC8529409 /* YYImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YYImage-dummy.m"; sourceTree = "<group>"; };
-		911CCCAF6BD05F081B830A5AD69AE5D7 /* Images.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		920F32EB22EB9E7EF9FC1E1EA1B2CDF3 /* YYWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YYWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		96F6CC398C0EFA76C09C470FFBA9AC8B /* YYWebImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYWebImage-prefix.pch"; sourceTree = "<group>"; };
@@ -417,7 +415,6 @@
 		92C4E8C15C83545895DEC220F6E184A8 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				911CCCAF6BD05F081B830A5AD69AE5D7 /* Images.swift */,
 				7013C6BA1E93F8E8009B529B /* ImageCompatible.swift */,
 			);
 			path = Sources;
@@ -752,7 +749,6 @@
 			files = (
 				7013C6BB1E93F8E8009B529B /* ImageCompatible.swift in Sources */,
 				771F23F084FFD73E080C67D209FA0B38 /* Images-dummy.m in Sources */,
-				F84D575B0B139211C0E6FD3FE55911B6 /* Images.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
