@@ -18,9 +18,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        
-        super.viewDidAppear(animated)
+    @IBAction func setImageButtonTapped(_ sender: UIBarButtonItem) {
         
         self.imageView.img.setImage(urlStrings: ["https://i.ezbuy.sg/Frc0C3N6KjH9bWD7aOGJFWqJuJVn"])
     }
