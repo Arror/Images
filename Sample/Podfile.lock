@@ -1,6 +1,8 @@
 PODS:
-  - Images (0.1.0):
+  - Images/Core (0.1.0):
     - YYWebImage
+  - Images/Qiniu (0.1.0):
+    - Images/Core
   - YYCache (1.0.4)
   - YYImage (1.0.4):
     - YYImage/Core (= 1.0.4)
@@ -10,18 +12,19 @@ PODS:
     - YYImage
 
 DEPENDENCIES:
-  - Images (from `../../Images`)
+  - Images/Core (from `../../Images`)
+  - Images/Qiniu (from `../../Images`)
 
 EXTERNAL SOURCES:
   Images:
     :path: ../../Images
 
 SPEC CHECKSUMS:
-  Images: e6901ae671f7ca402ec371fdc4ad3df4d1c4de42
+  Images: 18d8c07c9a9032d4e2af93e046680faf3f9e0105
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
   YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
 
-PODFILE CHECKSUM: 871434f09fad5a1fb44c4b4ee9a49f5e2b7aad14
+PODFILE CHECKSUM: d1b9befde3e8eb1010b698eb8955b423d4088bf0
 
 COCOAPODS: 1.2.0

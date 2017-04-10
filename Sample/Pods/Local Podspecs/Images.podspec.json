@@ -11,13 +11,32 @@
     "git": "https://github.com/Arror/Images.git",
     "tag": "0.1.0"
   },
-  "source_files": "Sources/*.swift",
+  "default_subspecs": "Core",
   "platforms": {
     "ios": "8.0"
   },
-  "dependencies": {
-    "YYWebImage": [
+  "subspecs": [
+    {
+      "name": "Core",
+      "ios": {
+        "source_files": "Sources/Core/*.swift"
+      },
+      "dependencies": {
+        "YYWebImage": [
 
-    ]
-  }
+        ]
+      }
+    },
+    {
+      "name": "Qiniu",
+      "ios": {
+        "source_files": "Sources/Qiniu/*.swift"
+      },
+      "dependencies": {
+        "Images/Core": [
+
+        ]
+      }
+    }
+  ]
 }
