@@ -10,7 +10,7 @@ extension Array where Iterator.Element == String {
 
 extension Array where Iterator.Element == URL {
     
-    public func makeImageURLIterator() -> AnyIterator<URL> {
+    func makeImageURLIterator() -> AnyIterator<URL> {
         
         return AnyIterator<URL>(self.makeIterator())
     }
