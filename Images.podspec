@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name = 'Images'
-  s.version = '0.0.1'
+  s.version = '0.0.2'
   s.license = 'MIT'
   s.summary = 'Images.'
   s.homepage = 'https://github.com/Arror/Images'
