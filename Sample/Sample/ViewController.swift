@@ -19,11 +19,10 @@ class ViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        
         super.viewDidAppear(animated)
         
-        let i = AnyIterator<URL>([URL(string: "https://i.ezbuy.sg/Frc0C3N6KjH9bWD7aOGJFWqJuJVn")!].makeIterator())
-        
-        self.imageView.img.setImage(iterator: i)
+        self.imageView.img.setImage(urlStrings: ["https://i.ezbuy.sg/Frc0C3N6KjH9bWD7aOGJFWqJuJVn"])
     }
 }
 
