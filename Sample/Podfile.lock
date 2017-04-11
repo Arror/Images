@@ -1,7 +1,9 @@
 PODS:
+  - CaseInsensitiveString (1.0.0)
   - Images/Core (0.0.2):
     - YYWebImage
   - Images/Qiniu (0.0.2):
+    - CaseInsensitiveString
     - Images/Core
     - YYImage/WebP
   - YYCache (1.0.4)
@@ -23,7 +25,8 @@ EXTERNAL SOURCES:
     :path: ../../Images
 
 SPEC CHECKSUMS:
-  Images: 81074a701c1a71f3f5af131e70f23ec6239337e3
+  CaseInsensitiveString: c0ca59df56fdda71949c710afa2543fb2891d14f
+  Images: ea27d60f8e64133982a954755c30d2781e1a0f9c
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
   YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
