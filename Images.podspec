@@ -20,7 +20,6 @@ Pod::Spec.new do |s|
     qiniu.ios.source_files = 'Sources/Qiniu/*.swift'
     qiniu.dependency "Images/Core"
     qiniu.dependency "YYImage/WebP"
-    qiniu.dependency "CaseInsensitiveString"
   end
 
 end

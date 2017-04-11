@@ -38,7 +38,7 @@ public enum ImageMode {
             }
         }()
         
-        guard !(width.isEmpty && height.isEmpty) else { return "" }
+        guard !(width.isEmpty && height.isEmpty) else { return "/\(m)" }
         
         return "/\(m)\(width)\(height)"
     }

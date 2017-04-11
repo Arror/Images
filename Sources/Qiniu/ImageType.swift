@@ -1,5 +1,4 @@
 import Foundation
-import CaseInsensitiveString
 
 public enum ImageType {
     

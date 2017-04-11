@@ -1,6 +1,0 @@
-framework module CaseInsensitiveString {
-  umbrella header "CaseInsensitiveString-umbrella.h"
-
-  export *
-  module * { export * }
-}
