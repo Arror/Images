@@ -1,6 +1,6 @@
 import Foundation
 
-public enum ImageMode {
+enum ImageMode {
     
     case m0
     case m1

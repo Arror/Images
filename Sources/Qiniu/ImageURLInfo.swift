@@ -1,6 +1,6 @@
 import Foundation
 
-public struct ImageURLInfo {
+struct ImageURLInfo {
     
     let mode:           ImageMode
     let type:           ImageType
@@ -9,7 +9,7 @@ public struct ImageURLInfo {
     let quality:        Int
     let qualityForce:   Bool
     
-    public init(
+    init(
         mode: ImageMode,
         type: ImageType     = .default,
         interlace: Bool     = true,
@@ -25,7 +25,7 @@ public struct ImageURLInfo {
         self.qualityForce   = qualityForce
     }
     
-    public func makeQiniuImageURLExtension(w: Int? = nil, h: Int? = nil) -> String {
+    func makeQiniuImageURLExtension(w: Int? = nil, h: Int? = nil) -> String {
         
         let qualityString: String = {
             

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Images
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,6 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        QiniuImages.shared.regist(host: "https://i.ezbuy.sg")
+        
         return true
     }
 }

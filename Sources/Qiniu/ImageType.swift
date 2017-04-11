@@ -1,6 +1,6 @@
 import Foundation
 
-public enum ImageType {
+enum ImageType {
     
     case `default`
     

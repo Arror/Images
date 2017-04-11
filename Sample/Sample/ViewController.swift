@@ -20,18 +20,19 @@ class ViewController: UIViewController {
     
     @IBAction func setImageButtonTapped(_ sender: UIBarButtonItem) {
         
-        let extensionInfo = ImageURLInfo(mode: .m0)
+        let imgStr = "Frc0C3N6KjH9bWD7aOGJFWqJuJVn"
         
-        let width = Int(self.imageView.bounds.width)
-        let height = Int(self.imageView.bounds.height)
+        if let i = imgStr.makeImageURLIterator(size: self.imageView.bounds.size) {
+            
+            for url in i {
+                
+                print(url.absoluteString)
+            }
+        }
         
-        let info = extensionInfo.makeQiniuImageURLExtension(w: width, h: height)
         
-        let urlString = "https://i.ezbuy.sg/Frc0C3N6KjH9bWD7aOGJFWqJuJVn?\(info)"
         
-        print(urlString)
-        
-        self.imageView.img.setImage(urlStrings: [urlString])
+        self.imageView.img.setImage(iterator: imgStr.makeImageURLIterator(size: self.imageView.bounds.size))
     }
 }
 

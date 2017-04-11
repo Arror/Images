@@ -6,6 +6,11 @@ extension Array where Iterator.Element == String {
         
         return self.flatMap { URL(string: $0) }
     }
+    
+    func makeImageURLIterator() -> AnyIterator<URL> {
+        
+        return self.makeURLs().makeImageURLIterator()
+    }
 }
 
 extension Array where Iterator.Element == URL {
