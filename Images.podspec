@@ -19,6 +19,7 @@ Pod::Spec.new do |s|
   s.subspec 'Qiniu' do |qiniu|
     qiniu.ios.source_files = 'Sources/Qiniu/*.swift'
     qiniu.dependency "Images/Core"
+    qiniu.dependency "YYImage/WebP"
   end
 
 end

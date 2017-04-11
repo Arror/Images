@@ -1,12 +1,15 @@
 PODS:
-  - Images/Core (0.1.0):
+  - Images/Core (0.0.2):
     - YYWebImage
-  - Images/Qiniu (0.1.0):
+  - Images/Qiniu (0.0.2):
     - Images/Core
+    - YYImage/WebP
   - YYCache (1.0.4)
   - YYImage (1.0.4):
     - YYImage/Core (= 1.0.4)
   - YYImage/Core (1.0.4)
+  - YYImage/WebP (1.0.4):
+    - YYImage/Core
   - YYWebImage (1.0.5):
     - YYCache
     - YYImage
@@ -20,7 +23,7 @@ EXTERNAL SOURCES:
     :path: ../../Images
 
 SPEC CHECKSUMS:
-  Images: 18d8c07c9a9032d4e2af93e046680faf3f9e0105
+  Images: 81074a701c1a71f3f5af131e70f23ec6239337e3
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
   YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928

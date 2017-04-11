@@ -1,6 +1,6 @@
 {
   "name": "Images",
-  "version": "0.1.0",
+  "version": "0.0.2",
   "license": "MIT",
   "summary": "Images.",
   "homepage": "https://github.com/Arror/Images",
@@ -9,7 +9,7 @@
   },
   "source": {
     "git": "https://github.com/Arror/Images.git",
-    "tag": "0.1.0"
+    "tag": "0.0.2"
   },
   "default_subspecs": "Core",
   "platforms": {
@@ -34,6 +34,9 @@
       },
       "dependencies": {
         "Images/Core": [
+
+        ],
+        "YYImage/WebP": [
 
         ]
       }
