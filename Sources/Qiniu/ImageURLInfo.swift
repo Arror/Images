@@ -25,7 +25,7 @@ public struct ImageURLInfo {
         self.qualityForce   = qualityForce
     }
     
-    func makeQiniuImageURLExtension(w: Int? = nil, h: Int? = nil) -> String {
+    public func makeQiniuImageURLExtension(w: Int? = nil, h: Int? = nil) -> String {
         
         let qualityString: String = {
             
@@ -35,6 +35,7 @@ public struct ImageURLInfo {
         }()
         
         let ignoreErrorString: String = {
+            
             if self.ignoreError {
                 return "/ignore-error/1"
             } else {
@@ -42,6 +43,8 @@ public struct ImageURLInfo {
             }
         }()
         
-        return "imageView2\(self.mode.imageModeString(w: w, h: h))\(self.type.imageTypeString)/interlace/\(self.interlace ? "1" : "0")\(qualityString)\(ignoreErrorString)"
+        let interlaceString: String = "/interlace/\(self.interlace ? "1" : "0")"
+        
+        return "imageView2\(self.mode.imageModeString(w: w, h: h))\(self.type.imageTypeString)\(interlaceString)\(qualityString)\(ignoreErrorString)"
     }
 }

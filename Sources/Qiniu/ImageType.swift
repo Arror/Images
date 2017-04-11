@@ -13,19 +13,6 @@ public enum ImageType {
     case tiff
     case bmp
     
-    public init(code: String) {
-        switch CaseInsensitiveString(code) {
-        case "psd":     self = .psd
-        case "jpeg":    self = .jpeg
-        case "png":     self = .png
-        case "gif":     self = .gif
-        case "webp":    self = .webp
-        case "tiff":    self = .tiff
-        case "bmp":     self = .bmp
-        default:        self = .default
-        }
-    }
-    
     var code: String {
         switch self {
         case .psd:      return "psd"
