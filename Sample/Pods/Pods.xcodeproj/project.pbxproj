@@ -48,7 +48,7 @@
 		9B9DA79852CED5EB2F99F65E3DC292E5 /* YYSpriteSheetImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E2F87D2C01855F5D6DFD97618F15CD /* YYSpriteSheetImage.m */; };
 		9C1F8743F213D90CDD793335F1AA0E9D /* YYDiskCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 14E58EC16A0C8E81298A67124938787A /* YYDiskCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D896B70CC43F3A8C0EDEB89F9D5B78E /* YYKVStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 04899AC6F1DC3134E730E702469BB14E /* YYKVStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A05FE4DC82A04DEDDF193B61F836EBF6 /* ImageURLInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F377370B6C826C125512E80445FC697D /* ImageURLInfo.swift */; };
+		A05FE4DC82A04DEDDF193B61F836EBF6 /* FormatInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F377370B6C826C125512E80445FC697D /* FormatInfo.swift */; };
 		A06163C3E81AEFB0830FDFA912DF54D7 /* YYSpriteSheetImage.h in Headers */ = {isa = PBXBuildFile; fileRef = E9B8DED041ABAEA38C8DDEFD066F69EC /* YYSpriteSheetImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A24AD2741AA9DC634A3B45EBCA7C8B83 /* YYImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FE906B95310C8EC725CF17758CC702C0 /* YYImageCache.m */; };
 		A60353F7EB5FBB8F351987B862B96964 /* YYImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 393C242214CC91406C4FD0F012D79A70 /* YYImage.framework */; };
@@ -248,7 +248,7 @@
 		E80D5E334270E4CBF8059719C7F3FCDE /* YYWebImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYWebImage-umbrella.h"; sourceTree = "<group>"; };
 		E9B8DED041ABAEA38C8DDEFD066F69EC /* YYSpriteSheetImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYSpriteSheetImage.h; path = YYImage/YYSpriteSheetImage.h; sourceTree = "<group>"; };
 		ECE70B1896475EFC4216A52365997D4E /* ImageMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ImageMode.swift; sourceTree = "<group>"; };
-		F377370B6C826C125512E80445FC697D /* ImageURLInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ImageURLInfo.swift; sourceTree = "<group>"; };
+		F377370B6C826C125512E80445FC697D /* FormatInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FormatInfo.swift; sourceTree = "<group>"; };
 		F6F9345CC55DC1AA24D1646677DE1E2D /* YYImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYImage.h; path = YYImage/YYImage.h; sourceTree = "<group>"; };
 		F8CD881D01811B4F8324F29F9B776E66 /* UIButton+YYWebImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+YYWebImage.m"; path = "YYWebImage/Categories/UIButton+YYWebImage.m"; sourceTree = "<group>"; };
 		FE906B95310C8EC725CF17758CC702C0 /* YYImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYImageCache.m; path = YYWebImage/YYImageCache.m; sourceTree = "<group>"; };
@@ -527,7 +527,7 @@
 				70AD813E1E9D2EB80069286B /* QiniuImages.swift */,
 				ECE70B1896475EFC4216A52365997D4E /* ImageMode.swift */,
 				0D286F88F6FC1A0F6246133726655E51 /* ImageType.swift */,
-				F377370B6C826C125512E80445FC697D /* ImageURLInfo.swift */,
+				F377370B6C826C125512E80445FC697D /* FormatInfo.swift */,
 			);
 			path = Qiniu;
 			sourceTree = "<group>";
@@ -872,7 +872,7 @@
 				466A2B28D3C37F28F4092C7F52924ED2 /* Images.swift in Sources */,
 				70AD813F1E9D2EB80069286B /* QiniuImages.swift in Sources */,
 				439CECAFC3A0152C5DD3CF74984C1603 /* ImageType.swift in Sources */,
-				A05FE4DC82A04DEDDF193B61F836EBF6 /* ImageURLInfo.swift in Sources */,
+				A05FE4DC82A04DEDDF193B61F836EBF6 /* FormatInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

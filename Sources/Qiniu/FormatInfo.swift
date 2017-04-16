@@ -1,6 +1,6 @@
 import Foundation
 
-struct ImageURLInfo {
+struct FormatInfo {
     
     let mode:           ImageMode
     let type:           ImageType
@@ -25,7 +25,7 @@ struct ImageURLInfo {
         self.qualityForce   = qualityForce
     }
     
-    func makeQiniuImageURLExtension(w: Int? = nil, h: Int? = nil) -> String {
+    func makeQiniuImageFormatString(w: Int? = nil, h: Int? = nil) -> String {
         
         let qualityString: String = {
             
@@ -47,4 +47,7 @@ struct ImageURLInfo {
         
         return "imageView2\(self.mode.imageModeString(w: w, h: h))\(self.type.imageTypeString)\(interlaceString)\(qualityString)\(ignoreErrorString)"
     }
+    
+    static let defaultFormat = FormatInfo(mode: .m0)
+    static let webPFormat    = FormatInfo(mode: .m0, type: .webp)
 }

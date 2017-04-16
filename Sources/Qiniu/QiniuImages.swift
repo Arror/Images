@@ -6,20 +6,13 @@ public enum ImageQuality {
     case normal
 }
 
-public class QiniuImages {
+public final class QiniuImages {
     
     private init() {}
     
     public static let shared = QiniuImages()
     
-    public private(set) var host: String = ""
-    
     public private(set) var imageQuality: ImageQuality = .normal
-    
-    public func regist(host: String) {
-        
-        self.host = host
-    }
     
     public func setImageQuality(_ quality: ImageQuality) {
         
@@ -28,7 +21,7 @@ public class QiniuImages {
     
     func makeImageURLIterator(url: String, size: CGSize? = nil) -> AnyIterator<URL>? {
         
-        guard let urlString = self.makeImageURLString(string: url) else { return nil }
+        guard let urlString = URL(string: url)?.absoluteString else { return nil }
         
         let scale: CGFloat = {
             switch self.imageQuality {
@@ -39,7 +32,7 @@ public class QiniuImages {
             }
         }()
         
-        let extensionInfo: [String] = {
+        let formatStrings: [String] = {
             
             var infos: [String] = []
             
@@ -47,33 +40,19 @@ public class QiniuImages {
                 let width   = Int(size.width * scale)
                 let height  = Int(size.height * scale)
                 
-                infos.append(self.webPImageURLInfo.makeQiniuImageURLExtension(w: width, h: height))
-                infos.append(self.defaultImageURLInfo.makeQiniuImageURLExtension(w: width, h: height))
+                infos.append(FormatInfo.webPFormat.makeQiniuImageFormatString(w: width, h: height))
+                infos.append(FormatInfo.defaultFormat.makeQiniuImageFormatString(w: width, h: height))
             }
             
-            infos.append(self.webPImageURLInfo.makeQiniuImageURLExtension())
-            infos.append(self.defaultImageURLInfo.makeQiniuImageURLExtension())
+            infos.append(FormatInfo.webPFormat.makeQiniuImageFormatString())
+            infos.append(FormatInfo.defaultFormat.makeQiniuImageFormatString())
             
             return infos
         }()
         
-        let urlStrings = extensionInfo.map { "\(urlString)?\($0)" }
+        let urlStrings = formatStrings.map { "\(urlString)?\($0)" }
         
         return urlStrings.makeImageURLIterator()
-    }
-    
-    let defaultImageURLInfo = ImageURLInfo(mode: .m0)
-    let webPImageURLInfo    = ImageURLInfo(mode: .m0, type: .webp)
-    
-    func makeImageURLString(string: String?) -> String? {
-        
-        guard let str = string, !str.isEmpty else { return nil }
-        
-        if str.lowercased().hasPrefix("http") {
-            return str
-        } else {
-            return "\(self.host)/\(str)"
-        }
     }
 }
 
