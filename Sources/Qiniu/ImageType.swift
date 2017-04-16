@@ -25,7 +25,7 @@ enum ImageType {
         }
     }
     
-    var imageTypeString: String {
+    func imageTypeFormatString() -> String {
         switch self {
         case .default:
             return ""

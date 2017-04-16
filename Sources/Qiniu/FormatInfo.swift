@@ -45,7 +45,7 @@ struct FormatInfo {
         
         let interlaceString: String = "/interlace/\(self.interlace ? "1" : "0")"
         
-        return "imageView2\(self.mode.imageModeString(w: w, h: h))\(self.type.imageTypeString)\(interlaceString)\(qualityString)\(ignoreErrorString)"
+        return "imageView2\(self.mode.imageModeFormatString(w: w, h: h))\(self.type.imageTypeFormatString())\(interlaceString)\(qualityString)\(ignoreErrorString)"
     }
     
     static let defaultFormat = FormatInfo(mode: .m0)

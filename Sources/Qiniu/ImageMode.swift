@@ -9,7 +9,7 @@ enum ImageMode {
     case m4
     case m5
     
-    public func imageModeString(w: Int? = nil , h: Int? = nil) -> String {
+    func imageModeFormatString(w: Int? = nil , h: Int? = nil) -> String {
         
         let m: UInt = {
             switch self {
