@@ -20,9 +20,9 @@ class ViewController: UIViewController {
     
     @IBAction func setImageButtonTapped(_ sender: UIBarButtonItem) {
         
-        let imgStr = "https://i.ezbuy.sg/Frc0C3N6KjH9bWD7aOGJFWqJuJVn"
+        let imgURLStr = "https://i.ezbuy.sg/Frc0C3N6KjH9bWD7aOGJFWqJuJVn"
         
-        self.imageView.img.setImage(iterator: imgStr.makeImageURLIterator(size: self.imageView.bounds.size))
+        self.imageView.img.setImage(iterator: imgURLStr.makeImageURLIterator(size: self.imageView.bounds.size))
     }
 }
 

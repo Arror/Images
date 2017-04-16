@@ -23,17 +23,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ASw-qu-jNY">
-                                <rect key="frame" x="20" y="244" width="334" height="178"/>
+                                <rect key="frame" x="0.0" y="64" width="374" height="124.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="ASw-qu-jNY" secondAttribute="height" multiplier="15:8" id="bVV-88-yCt"/>
+                                    <constraint firstAttribute="width" secondItem="ASw-qu-jNY" secondAttribute="height" multiplier="15:5" id="bVV-88-yCt"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ASw-qu-jNY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="LUw-5c-w8r"/>
+                            <constraint firstItem="ASw-qu-jNY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LUw-5c-w8r"/>
+                            <constraint firstItem="ASw-qu-jNY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="MT3-xh-1oI"/>
                             <constraint firstItem="ASw-qu-jNY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eo3-to-cgo"/>
-                            <constraint firstItem="ASw-qu-jNY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="roS-cc-r9N"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Sample" id="dC3-LB-Lwu">
