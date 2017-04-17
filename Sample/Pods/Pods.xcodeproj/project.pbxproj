@@ -36,6 +36,7 @@
 		6469205B9D749C66EAD3CB9D28138024 /* YYFrameImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C59C29C381B65E456134BE40951568 /* YYFrameImage.m */; };
 		6763ACDCC5D10695C77046B6EA75BE01 /* YYImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 678AA43C4F94FC7AA21A9031F4C0C884 /* YYImage-dummy.m */; };
 		676FC0D7ADAEF53BAFC1CA1023A68D23 /* UIImage+YYWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 31E4C66936C37148EB18FFB6191ABF9F /* UIImage+YYWebImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70A770211EA4EF0E0007E2AE /* QiniuImages+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A770201EA4EF0E0007E2AE /* QiniuImages+Array.swift */; };
 		70AD813F1E9D2EB80069286B /* QiniuImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AD813E1E9D2EB80069286B /* QiniuImages.swift */; };
 		72188EF751B334127D7E71D7AA63BD21 /* YYKVStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FE0C125A9E9705BE777217A956C323 /* YYKVStorage.m */; };
 		755B5BD84B38CBD94DB8D1A4B0391A6E /* MKAnnotationView+YYWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 8050BD7335E7672BE1110EF8BF351087 /* MKAnnotationView+YYWebImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -203,6 +204,7 @@
 		6BE88BC30D23A8131F9121C5724CB308 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D65DC53E876D33B73CCFEE44C379EE1 /* Pods-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sample.release.xcconfig"; sourceTree = "<group>"; };
 		70810E36871CBCAA3CE7125B661BAD3A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		70A770201EA4EF0E0007E2AE /* QiniuImages+Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "QiniuImages+Array.swift"; sourceTree = "<group>"; };
 		70AD813E1E9D2EB80069286B /* QiniuImages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QiniuImages.swift; sourceTree = "<group>"; };
 		735E5204C40E887244F2B75BCCDF2572 /* Pods-Sample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Sample.modulemap"; sourceTree = "<group>"; };
 		74A43526ACCF3A102630B2932CEC8897 /* YYCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YYCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -525,6 +527,7 @@
 			isa = PBXGroup;
 			children = (
 				70AD813E1E9D2EB80069286B /* QiniuImages.swift */,
+				70A770201EA4EF0E0007E2AE /* QiniuImages+Array.swift */,
 				ECE70B1896475EFC4216A52365997D4E /* ImageMode.swift */,
 				0D286F88F6FC1A0F6246133726655E51 /* ImageType.swift */,
 				F377370B6C826C125512E80445FC697D /* FormatInfo.swift */,
@@ -867,6 +870,7 @@
 			files = (
 				D05E13D3A241F51B8A5FB363EF51E49A /* ImageCompatible.swift in Sources */,
 				F15649BC9BEEA2483D999D881984003C /* ImageMode.swift in Sources */,
+				70A770211EA4EF0E0007E2AE /* QiniuImages+Array.swift in Sources */,
 				BA234A11B2E9EAC320F905B9355BFDB7 /* Images+Array.swift in Sources */,
 				DF916962803DD1B783E8EEA0E1677EA9 /* Images-dummy.m in Sources */,
 				466A2B28D3C37F28F4092C7F52924ED2 /* Images.swift in Sources */,
