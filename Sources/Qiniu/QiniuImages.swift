@@ -34,20 +34,21 @@ public final class QiniuImages {
         
         let formatStrings: [String] = {
             
-            var infos: [String] = []
+            var strs: [String] = []
             
             if let size = size {
+                
                 let width   = Int(size.width * scale)
                 let height  = Int(size.height * scale)
                 
-                infos.append(FormatInfo.webPFormat.makeQiniuImageFormatString(w: width, h: height))
-                infos.append(FormatInfo.defaultFormat.makeQiniuImageFormatString(w: width, h: height))
+                strs.append(FormatInfo.webPFormat.makeQiniuImageFormatString(w: width, h: height))
+                strs.append(FormatInfo.defaultFormat.makeQiniuImageFormatString(w: width, h: height))
             }
             
-            infos.append(FormatInfo.webPFormat.makeQiniuImageFormatString())
-            infos.append(FormatInfo.defaultFormat.makeQiniuImageFormatString())
+            strs.append(FormatInfo.webPFormat.makeQiniuImageFormatString())
+            strs.append(FormatInfo.defaultFormat.makeQiniuImageFormatString())
             
-            return infos
+            return strs
         }()
         
         let urlStrings = formatStrings.map { "\(urlString)?\($0)" }

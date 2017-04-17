@@ -22,7 +22,7 @@ enum ImageMode {
             }
         }()
         
-        let width: String = {
+        let wFormatString: String = {
             if let wStr = w, wStr > 0 {
                 return "/w/\(wStr)"
             } else {
@@ -30,7 +30,7 @@ enum ImageMode {
             }
         }()
         
-        let height: String = {
+        let hFormatString: String = {
             if let hStr = h, hStr > 0 {
                 return "/h/\(hStr)"
             } else {
@@ -38,8 +38,8 @@ enum ImageMode {
             }
         }()
         
-        guard !(width.isEmpty && height.isEmpty) else { return "/\(m)" }
+        guard !(wFormatString.isEmpty && hFormatString.isEmpty) else { return "/\(m)" }
         
-        return "/\(m)\(width)\(height)"
+        return "/\(m)\(wFormatString)\(hFormatString)"
     }
 }
